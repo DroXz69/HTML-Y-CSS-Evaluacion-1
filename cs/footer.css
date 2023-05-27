@@ -80,11 +80,13 @@ body {
     height: 100px;
     width: auto;
     padding-bottom: 10px;
+    padding-right: 7px;
 }
 
-.footer-all {
+.footer-all-social {
     padding-top: 30px;
     display: grid;
+    padding-left: 850px;
 }
 
 @media(max-width: 991px) {
@@ -95,5 +97,8 @@ body {
     .footer-links {
         width: 100%;
         margin-bottom: 30px;
+    }
+    .footer-all-social{
+        padding-left: 30px;
     }
 }
