@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    padding: 5px 4%;
+}
+
+/* TIPO */
+.footer .tipo {
+    list-style: none;
+}
+
+.footer .tipo li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.1s;
+}
+
+.footer .tipo li:hover {
+    transform: scale(1.1);
+}
+
+.footer .tipo li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .tipo li a:hover {
+    color: blue;
+}
+
+
+/* MARCAS */
+.footer .marcas {
+    list-style: none;
+}
+
+.footer .marcas li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.1s;
+}
+
+.footer .marcas li:hover {
+    transform: scale(1.1);
+}
+
+.footer .marcas li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .marcas li a:hover {
+    color: blue;
+}
+
+
+/* ESTADO */
+.footer .estado {
+    list-style: none;
+}
+
+.footer .estado li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.1s;
+}
+
+.footer .estado li:hover {
+    transform: scale(1.1);
+}
+
+.footer .estado li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .estado li a:hover {
+    color: blue;
+}
+
+
+/* AYUDA GENERAL */
+.footer .ayuda-general {
+    list-style: none;
+}
+
+.footer .ayuda-general li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.1s;
+}
+
+.footer .ayuda-general li:hover {
+    transform: scale(1.1);
+}
+
+.footer .ayuda-general li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .ayuda-general li a:hover {
+    color: blue;
+}
+
+
+/* Informacion */
+.footer .informacion li {
+    display: inline-block;
+    padding: 0 5px;
+    transition: all 0.1s;
+}
+
+.footer .informacion .logo-footer {
+    cursor: pointer;
+}
+
+.footer .informacion img {
+    height: 110px;
+    width: auto;
+    transition: all 0.3s;
+    padding: 0 6%;
+    display: flex;
+    top: -10px;
+}
+.footer .informacion img:hover {
+    transform: scale(1.2);
+}
+
+.footer .informacion .logos-redes{
+    cursor: pointer;
+    list-style: none;
+}
+.footer .informacion .logos-redes img {
+    height: 25px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+.footer .informacion .logos-redes img:hover {
+    transform: scale(1.2);
+}
+
+.footer .informacion .copy {
+    color: white;
+    cursor: none;
+    font-size: 14px;
+    padding: 0 22%;
+}
