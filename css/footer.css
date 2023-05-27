@@ -1,158 +1,104 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize; /* empieza con mayuscula */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .footer {
-    background-color: gray;
+    background-color: #24262B;
+    padding: 80px 0;
+}
+
+.footer-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 400px;
-    padding: 5px 4%;
+    flex-wrap: wrap;
 }
 
-/* TIPO */
-.footer .tipo {
-    list-style: none;
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
 }
 
-.footer .tipo li {
+.footer-links h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
     display: inline-block;
-    padding: 0 20px;
-    transition: all 0.1s;
 }
 
-.footer .tipo li:hover {
-    transform: scale(1.1);
-}
-
-.footer .tipo li a {
-    color: white;
+.footer-links ul li a {
+    font-size: 18px;
     text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
 }
 
-.footer .tipo li a:hover {
-    color: blue;
+.footer-links ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 5px;
 }
 
-
-/* MARCAS */
-.footer .marcas {
-    list-style: none;
+.social-link {
+    padding-left: 7px;
+    padding-top: 3px;
 }
 
-.footer .marcas li {
+.social-link a {
     display: inline-block;
-    padding: 0 20px;
-    transition: all 0.1s;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
 }
 
-.footer .marcas li:hover {
-    transform: scale(1.1);
+.social-link a:hover {
+    background-color: #00C3FF;
 }
 
-.footer .marcas li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer .marcas li a:hover {
-    color: blue;
-}
-
-
-/* ESTADO */
-.footer .estado {
-    list-style: none;
-}
-
-.footer .estado li {
-    display: inline-block;
-    padding: 0 20px;
-    transition: all 0.1s;
-}
-
-.footer .estado li:hover {
-    transform: scale(1.1);
-}
-
-.footer .estado li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer .estado li a:hover {
-    color: blue;
-}
-
-
-/* AYUDA GENERAL */
-.footer .ayuda-general {
-    list-style: none;
-}
-
-.footer .ayuda-general li {
-    display: inline-block;
-    padding: 0 20px;
-    transition: all 0.1s;
-}
-
-.footer .ayuda-general li:hover {
-    transform: scale(1.1);
-}
-
-.footer .ayuda-general li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer .ayuda-general li a:hover {
-    color: blue;
-}
-
-
-/* Informacion */
-.footer .informacion li {
-    display: inline-block;
-    padding: 0 5px;
-    transition: all 0.1s;
-}
-
-.footer .informacion .logo-footer {
-    cursor: pointer;
-}
-
-.footer .informacion img {
-    height: 110px;
+.footer-links img {
+    height: 100px;
     width: auto;
-    transition: all 0.3s;
-    padding: 0 6%;
-    display: flex;
-    top: -10px;
-}
-.footer .informacion img:hover {
-    transform: scale(1.2);
+    padding-bottom: 10px;
+    padding-right: 7px;
 }
 
-.footer .informacion .logos-redes{
-    cursor: pointer;
-    list-style: none;
-}
-.footer .informacion .logos-redes img {
-    height: 25px;
-    width: auto;
-    transition: all 0.3s;
-    border-radius: 5px;
-}
-.footer .informacion .logos-redes img:hover {
-    transform: scale(1.2);
+.footer-all-social {
+    padding-top: 30px;
+    display: grid;
+    padding-left: 850px;
 }
 
-.footer .informacion .copy {
-    color: white;
-    cursor: none;
-    font-size: 14px;
-    padding: 0 22%;
+@media(max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-all-social{
+        padding-left: 30px;
+    }
 }
