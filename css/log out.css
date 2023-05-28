@@ -1,0 +1,211 @@
+.logo {
+    width: 200px;
+    height: 90px;
+    margin: 150px 0 0 345px;
+    display: block;
+    background-image: url(../img/Logo1.png);
+    background-size: cover;
+    background-position: center center;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    background: linear-gradient(150deg, #6C3483,#58D68D);
+    height: 100vh;
+}   
+
+.Registro{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.Registro h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.Registro form{
+    padding: 0 40px;
+    box-sizing: border-box; 
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+form .email{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+form .contraseña2{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+form .username input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+form .email input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+form .contraseña input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+form .contraseña2 input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gray;
+    pointer-events: none;
+    transition: .5s;
+}
+.email label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gray;
+    pointer-events: none;
+    transition: .5s;
+}
+.contraseña label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gray;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contraseña2 label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gray;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username input:focus ~ label,
+.username input:valid ~ label{
+    top: -20px;
+    left: 0px;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.email input:focus ~ label,
+.email input:valid ~ label{
+    top: -20px;
+    left: 0px;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.contraseña input:focus ~ label,
+.contraseña input:valid ~ label{
+    top: -20px;
+    left: 0px;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.contraseña2 input:focus ~ label,
+.contraseña2 input:valid ~ label{
+    top: -20px;
+    left: 0px;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+input[type = "button"]{
+    width: 100%;
+    height: 50px;
+    background: purple;
+    border-radius: 25px;
+    border: 1px solid;
+    font-size: 18px;
+    color:gray;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type = "button"]:hover{
+    border-color: purple;
+    color: white;
+    transition: .5s;
+}
+
+
+.Cuenta{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color:black;
+}
+
+.Cuenta a{
+    color: blue;
+    text-decoration: none;
+}
+
+.Cuenta a:hover{
+    text-decoration: underline;
+}
