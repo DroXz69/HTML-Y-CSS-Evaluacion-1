@@ -1,7 +1,7 @@
 .logo {
     width: 200px;
     height: 90px;
-    margin: 150px 0 0 345px;
+    margin: 150px 0 0 828px;
     display: block;
     background-image: url(../img/Logo1.png);
     background-size: cover;
@@ -208,4 +208,10 @@ input[type = "button"]:hover{
 
 .Cuenta a:hover{
     text-decoration: underline;
+}
+
+@media(max-width: 991px) {
+    .logo{
+        margin: 150px 0 0 350px;
+    }
 }
