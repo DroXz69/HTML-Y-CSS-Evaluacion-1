@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 :root {
     --clr-header: #636363;
     --clr-wrapper: rgba(34, 32, 32, 0.61);
