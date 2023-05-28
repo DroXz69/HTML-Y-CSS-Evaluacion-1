@@ -2,191 +2,353 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarHub</title>
-    <link rel="shortcut icon" href="img/Icono.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/wrapper.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="">
-    <script src="https://kit.fontawesome.com/36116c68a9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarHub</title>
+  <link rel="shortcut icon" href="img/Icono.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/wrapper.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/36116c68a9.js" crossorigin="anonymous"></script>
+  <!-- Main -->
+  <script>
+    function mostrarContenido(contenidoId, botonMostrarId, botonOcultarId) {
+      var botonMostrar = document.getElementById(botonMostrarId);
+      var botonOcultar = document.getElementById(botonOcultarId);
+      var contenido = document.getElementById(contenidoId);
+
+      contenido.style.display = 'block';
+
+      botonMostrar.style.display = 'none';
+
+      botonOcultar.style.display = 'inline-block';
+    }
+
+    function ocultarContenido(contenidoId, botonMostrarId, botonOcultarId) {
+      var botonMostrar = document.getElementById(botonMostrarId);
+      var botonOcultar = document.getElementById(botonOcultarId);
+      var contenido = document.getElementById(contenidoId);
+
+      contenido.style.display = 'none';
+
+      botonOcultar.style.display = 'none';
+
+      botonMostrar.style.display = 'inline-block';
+    }
+  </script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="../img/Logo.png" alt="Logo">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Todos los Autos</a></li>
-                <li><a href="#">Autos Nuevos</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="nav-sso">
-                <li><a href="Login.html">Ingresar</a></li>
-                <li><a href="./log out.html">Registrarse</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <h2 class="titulo">Encuentra tu proximo auto...</h2>
-    <section class="wrapper container">
-        <ul class="nav">
-            <li><a class="borde-top" href="#">Buscar Autos</a>
-                <ul>
-                    <li><a href="#">Autos, Camionetas y 4x4</a></li>
-                    <li><a href="#">Buses</a></li>
-                    <li><a href="#">Camiones</a></li>
-                    <li><a href="#">Casas Rodantes</a></li>
-                    <li><a href="#">Motos</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Marca</a>            
-                <ul>
-                    <li><a href="#">Chevrolet</a></li>
-                    <li><a href="#">Hyundai</a></li>
-                    <li><a href="#">Kia</a></li>
-                    <li><a href="#">Suzuki</a></li>
-                    <li><a href="#">Nissan</a></li>
-                    <li><a href="#">Toyota</a></li>
-                    <li><a href="#">Ford</a></li>
-                    <li><a href="#">Peugeot</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Modelo</a>
-                <ul>
-                    <li><a href="#">Captiva</a></li>
-                    <li><a href="#">Elantra</a></li>
-                    <li><a href="#">Cerato</a></li>
-                    <li><a href="#">Dzire</a></li>
-                    <li><a href="#">Skyline</a></li>
-                    <li><a href="#">Supra</a></li>
-                    <li><a href="#">Raptor</a></li>
-                    <li><a href="#">5008</a></li>
-                </ul>
-            </li>
-            <a class="palabra-clave" href="#"><input type="search" placeholder="Palabra Clave"></a>
-            <a class="buscar" href="#"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Buscar Vehículo</button></a>
+
+  <header class="header">
+    <div class="logo">
+      <img src="../img/Logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Todos los Autos</a></li>
+        <li><a href="#">Autos Nuevos</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="nav-sso">
+        <li><a href="Login.html">Ingresar</a></li>
+        <li><a href="./log out.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <h2 class="titulo">Encuentra tu proximo auto...</h2>
+
+  <section class="wrapper container">
+    <ul class="nav">
+      <li><a class="borde-top top" href="#">Buscar Autos</a>
+        <ul>
+          <li><a href="#">Autos, Camionetas y 4x4</a></li>
+          <li><a href="#">Buses</a></li>
+          <li><a href="#">Camiones</a></li>
+          <li><a href="#">Casas Rodantes</a></li>
+          <li><a href="#">Motos</a></li>
         </ul>
-        <ul class="nav">
-            <li><a class="tag borde-buttom" href="#">Estado</a>
-                <ul>
-                    <li><a href="#">Nuevos</a></li>
-                    <li><a href="#">Usados</a></li>
-                </ul>
-            </li>
-            <li><a class="tag" href="#">Año Min</a>
-                <ul>
-                    <li><a href="#">2023</a></li>
-                    <li><a href="#">2022</a></li>
-                    <li><a href="#">2021</a></li>
-                    <li><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
-                </ul>
-            </li>
-            <li><a class="tag" href="#">Año Max</a>
-                <ul>
-                    <li><a href="#">2023</a></li>
-                    <li><a href="#">2022</a></li>
-                    <li><a href="#">2021</a></li>
-                    <li><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
-                </ul>
-            </li>
-            <li><a class="tag" href="#">Precio Min</a>
-                <ul>
-                    <li><a href="#">CLP$ 500.000 </a></li>
-                    <li><a href="#">CLP$ 1.000.000 </a></li>
-                    <li><a href="#">CLP$ 1.500.000 </a></li>
-                    <li><a href="#">CLP$ 2.000.000 </a></li>
-                    <li><a href="#">CLP$ 2.500.000 </a></li>
-                    <li><a href="#">CLP$ 3.000.000 </a></li>
-                </ul>
-            </li>
-            <li><a class="tag" href="#">Precio Max</a>
-                <ul>
-                    <li><a href="#">CLP$ 500.000 </a></li>
-                    <li><a href="#">CLP$ 1.000.000 </a></li>
-                    <li><a href="#">CLP$ 1.500.000 </a></li>
-                    <li><a href="#">CLP$ 2.000.000 </a></li>
-                    <li><a href="#">CLP$ 2.500.000 </a></li>
-                    <li><a href="#">CLP$ 3.000.000 </a></li>
-                </ul>
-            </li>
+      </li>
+      <li><a class="top" href="#">Marca</a>
+        <ul>
+          <li><a href="#">Chevrolet</a></li>
+          <li><a href="#">Hyundai</a></li>
+          <li><a href="#">Kia</a></li>
+          <li><a href="#">Suzuki</a></li>
+          <li><a href="#">Nissan</a></li>
+          <li><a href="#">Toyota</a></li>
+          <li><a href="#">Ford</a></li>
+          <li><a href="#">Peugeot</a></li>
         </ul>
-    </section>
+      </li>
+      <li><a class="top" href="#">Modelo</a>
+        <ul>
+          <li><a href="#">Captiva</a></li>
+          <li><a href="#">Elantra</a></li>
+          <li><a href="#">Cerato</a></li>
+          <li><a href="#">Dzire</a></li>
+          <li><a href="#">Skyline</a></li>
+          <li><a href="#">Supra</a></li>
+          <li><a href="#">Raptor</a></li>
+          <li><a href="#">5008</a></li>
+        </ul>
+      </li>
+      <a class="palabra-clave" href="#"><input type="search" placeholder="Palabra Clave"></a>
+      <a class="buscar" href="#"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Buscar
+          Vehículo</button></a>
+    </ul>
+    <ul class="nav">
+      <li><a class="tag borde-buttom" href="#">Estado</a>
+        <ul>
+          <li><a href="#">Nuevos</a></li>
+          <li><a href="#">Usados</a></li>
+        </ul>
+      </li>
+      <li><a class="tag" href="#">Año Min</a>
+        <ul>
+          <li><a href="#">2023</a></li>
+          <li><a href="#">2022</a></li>
+          <li><a href="#">2021</a></li>
+          <li><a href="#">2020</a></li>
+          <li><a href="#">2019</a></li>
+          <li><a href="#">2018</a></li>
+          <li><a href="#">2017</a></li>
+        </ul>
+      </li>
+      <li><a class="tag" href="#">Año Max</a>
+        <ul>
+          <li><a href="#">2023</a></li>
+          <li><a href="#">2022</a></li>
+          <li><a href="#">2021</a></li>
+          <li><a href="#">2020</a></li>
+          <li><a href="#">2019</a></li>
+          <li><a href="#">2018</a></li>
+          <li><a href="#">2017</a></li>
+        </ul>
+      </li>
+      <li><a class="tag" href="#">Precio Min</a>
+        <ul>
+          <li><a href="#">CLP$ 500.000 </a></li>
+          <li><a href="#">CLP$ 1.000.000 </a></li>
+          <li><a href="#">CLP$ 1.500.000 </a></li>
+          <li><a href="#">CLP$ 2.000.000 </a></li>
+          <li><a href="#">CLP$ 2.500.000 </a></li>
+          <li><a href="#">CLP$ 3.000.000 </a></li>
+        </ul>
+      </li>
+      <li><a class="tag" href="#">Precio Max</a>
+        <ul>
+          <li><a href="#">CLP$ 500.000 </a></li>
+          <li><a href="#">CLP$ 1.000.000 </a></li>
+          <li><a href="#">CLP$ 1.500.000 </a></li>
+          <li><a href="#">CLP$ 2.000.000 </a></li>
+          <li><a href="#">CLP$ 2.500.000 </a></li>
+          <li><a href="#">CLP$ 3.000.000 </a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
 
-    <main>
-    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-row">
-                <div class="footer-links">
-                    <h4>Tipos de Vehiculos</h4>
-                    <ul>
-                        <li><a href="#">Autos</a></li>
-                        <li><a href="#">Camionetas</a></li>
-                        <li><a href="#">Todo Terrenos</a></li>
-                        <li><a href="#">Motos</a></li>
-                        <li><a href="#">Camiones</a></li>
-                        <li><a href="#">Furgonetas</a></li>
-                        <li><a href="#">Buses</a></li>
-                        <li><a href="#">Vans</a></li>
-                    </ul>
+  <main>
+    <div id="categorias">
+      <button class="boton-select" onclick="mostrarCategorias('Carrocería')">Carrocería</button>
+      <button class="boton-select" onclick="mostrarCategorias('marcas')">Marcas</button>
+    </div>
+
+    <div id="contenedorCategorias">
+
+    </div>
+
+    <script>
+      function mostrarCategorias(tipo) {
+        var contenedorCategorias = document.getElementById('contenedorCategorias');
+        contenedorCategorias.innerHTML = '';
+
+        if (tipo === 'Carrocería') {
+          contenedorCategorias.innerHTML += `
+                <div class="categoriasHorizontales">
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/1.png" alt="Sedan" width="100">
+                    </a>
+                    <h3>Sedan</h3>
+                  </div>
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/2.png" alt="SUV"width="100">
+                    </a>
+                    <h3>SUV</h3>
+                  </div>
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/3.png" alt="Convertible" width="100">
+                    </a>
+                    <h3>Convertible</h3>
+                  </div>
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/4.png" alt="Doble Cabina" width="100">
+                    </a>
+                    <h3>Doble Cabina</h3>
+                  </div>
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/5.png" alt="Furgon" width="100">
+                    </a>
+                    <h3>Furgon</h3>
+                  </div>
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/6.png" alt="Hatchback" width="100">
+                    </a>
+                    <h3>Hatchback</h3>
+                  </div>
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/7.png" alt="Coupé" width="100">
+                    </a>
+                    <h3>Coupé</h3>
+                  </div>
+                  <div class="categoria">
+                    <a href="#">
+                    <img class="carroceria" src="/img/8.png" alt="Station Wagon" width="100">
+                    </a>
+                    <h3>Station Wagon</h3>
+                  </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Marcas</h4>
-                    <ul>
-                        <li><a href="#">Chevrolet</a></li>
-                        <li><a href="#">Hyundai</a></li>
-                        <li><a href="#">Toyota</a></li>
-                        <li><a href="#">Nissan</a></li>
-                        <li><a href="#">Suzuki</a></li>
-                        <li><a href="#">Kia</a></li>
-                        <li><a href="#">Peugeot</a></li>
-                        <li><a href="#">Ford</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Estado del vehículo</h4>
-                    <ul>
-                        <li><a href="#">Nuevos</a></li>
-                        <li><a href="#">Usados</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Ayuda General</h4>
-                    <ul>
-                        <li><a href="#">Término y condiciones</a></li>
-                        <li><a href="#">Privacidad</a></li>
-                        <li><a href="#">Contáctanos</a></li>
-                        <li><a href="#">Mapa de sitio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links footer-all-social">
-                    <div class="social-link">
-                        <img src="../img/Logo1.png" alt="Logo-Footer"><br>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              `;
+        }
+
+        else if (tipo === 'marcas') {
+          contenedorCategorias.innerHTML += `
+                  <div class="categoriasHorizontales">
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas chevrolet" src="/img/marca1.png" alt="Chevrolet" width="100">
+                      </a>
+                      <h3>Chevrolet</h3>
                     </div>
-                </div>
-            </div>
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas" src="/img/marca2.png" alt="Hyundai" width="100">
+                      </a>
+                      <h3>Hyundai</h3>
+                    </div>
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas" src="/img/marca3.png" alt="Toyota" width="100">
+                      </a>
+                      <h3>Toyota</h3>
+                    </div>
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas" src="/img/marca4.png" alt="Nissan" width="100">
+                      </a>
+                      <h3>Nissan</h3>
+                    </div>
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas" src="/img/marca5.png" alt="Suzuki" width="100">
+                      </a>
+                      <h3>Suzuki</h3>
+                    </div>
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas" src="/img/marca6.png" alt="Kia" width="100">
+                      </a>
+                      <h3>Kia</h3>
+                    </div>
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas" src="/img/marca7.png" alt="Peugeot" width="100">
+                      </a>
+                      <h3>Peugeot</h3>
+                    </div>
+                    <div class="categoria">
+                      <a href="#">
+                      <img class="marcas" src="/img/marca8.png" alt="Ford" width="100">
+                      </a>
+                      <h3>Ford</h3>
+                    </div>
+                  </div>
+              `;
+        }
+      }
+    </script>
+
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h4>Tipos de Vehiculos</h4>
+          <ul>
+            <li><a href="#">Autos</a></li>
+            <li><a href="#">Camionetas</a></li>
+            <li><a href="#">Todo Terrenos</a></li>
+            <li><a href="#">Motos</a></li>
+            <li><a href="#">Camiones</a></li>
+            <li><a href="#">Furgonetas</a></li>
+            <li><a href="#">Buses</a></li>
+            <li><a href="#">Vans</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="footer-links">
+          <h4>Marcas</h4>
+          <ul>
+            <li><a href="#">Chevrolet</a></li>
+            <li><a href="#">Hyundai</a></li>
+            <li><a href="#">Toyota</a></li>
+            <li><a href="#">Nissan</a></li>
+            <li><a href="#">Suzuki</a></li>
+            <li><a href="#">Kia</a></li>
+            <li><a href="#">Peugeot</a></li>
+            <li><a href="#">Ford</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Estado del vehículo</h4>
+          <ul>
+            <li><a href="#">Nuevos</a></li>
+            <li><a href="#">Usados</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Ayuda General</h4>
+          <ul>
+            <li><a href="#">Término y condiciones</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Mapa de sitio</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-all-social">
+          <div class="social-link">
+            <img src="../img/Logo1.png" alt="Logo-Footer"><br>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>
