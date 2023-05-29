@@ -4,13 +4,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-:root {
-    --clr-header: #636363;
-    --clr-wrapper: rgba(34, 32, 32, 0.61);
-    --clr-main: #ffffff;
-    --clr-footer: #0d6b6e;
-}
-
 * {
     margin: 0;
     padding: 0;
